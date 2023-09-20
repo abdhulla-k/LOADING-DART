@@ -61,6 +61,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/dice-with-five-dots_318-60136.png
+    - assets/images/Dicey-1.png
+    - assets/images/Dicey-2.png
+    - assets/images/Dicey-3.png
+    - assets/images/Dicey-4.png
+    - assets/images/Dicey-5.png
+    - assets/images/Dicey-6.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
