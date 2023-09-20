@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:first_app/styled_text.dart';
+
 class GradientContainer extends StatelessWidget {
+  // One of the way of writing constructor and calling super in dart
   const GradientContainer({super.key});
 
   @override
@@ -15,13 +18,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text(
-            style: TextStyle(
-              color: Colors.white,
-              fontStyle: FontStyle.italic,
-              fontSize: 28.0,
-            ),
-            'Welcome to First App!'),
+        child: StyledText(),
       ),
     );
   }
