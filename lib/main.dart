@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +17,11 @@ void main() {
           ),
           child: const Center(
             child: Text(
+              style: TextStyle(
+                color: Colors.white,
+                fontStyle: FontStyle.italic,
+                fontSize: 28.0,
+              ),
               'Hellow world!',
             ),
           ),
