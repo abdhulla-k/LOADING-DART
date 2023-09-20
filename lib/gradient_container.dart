@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:first_app/styled_text.dart';
 
+// using variables
+var startAlignment = Alignment.topLeft;
+var endAlignment = Alignment.bottomRight;
+
 class GradientContainer extends StatelessWidget {
   // One of the way of writing constructor and calling super in dart
   const GradientContainer({super.key});
@@ -9,16 +13,18 @@ class GradientContainer extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
+          colors: const [
             Color.fromARGB(255, 62, 0, 104),
             Color.fromARGB(255, 57, 0, 131),
           ],
+          begin: startAlignment,
+          end: endAlignment,
         ),
       ),
       child: const Center(
-        child: StyledText(),
+        child: StyledText('Welcome to First App!'),
       ),
     );
   }
