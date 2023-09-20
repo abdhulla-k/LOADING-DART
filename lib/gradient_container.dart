@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:first_app/styled_text.dart';
+// import 'package:first_app/styled_text.dart';
 
 // using variables
 var startAlignment = Alignment.topLeft;
@@ -12,6 +12,10 @@ class GradientContainer extends StatelessWidget {
 
   final List<Color> gradientColors;
 
+  void rollDice() {
+    //execute
+  }
+
   @override
   Widget build(context) {
     return Container(
@@ -22,8 +26,29 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Welcome to First App!'),
+      child: Center(
+        // child: StyledText('Welcome to First App!'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/dice-with-five-dots_318-60136.png',
+              width: 200.0,
+            ),
+            TextButton(
+              onPressed: rollDice,
+              style: TextButton.styleFrom(
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                  ),
+                  foregroundColor: Colors.white,
+                  textStyle: const TextStyle(
+                    fontSize: 28,
+                  )),
+              child: const Text('Roll Dice'),
+            ),
+          ],
+        ),
       ),
     );
   }
